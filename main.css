@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+img.cafe {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+img.coffee {
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+

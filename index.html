@@ -1,22 +1,62 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Modalv2</title>
-</head>
-<body>
-    <h1>Welcome to Lost Parrot Cafe</h1>
-    <p>Our Barista's Top Picks</p>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Lost World Cafe</h1>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">containt</a></li>
+            <li><a href="#">locations</a></li>
+            <li><a href="#">shop</a></li>
+        </ul>
+    </nav>
+    <img src="imgs/cafe.jpg" alt="" class="cafe" />
+    <p>
+      Stay up to date with the latest events and seasonal drink menu by signing
+      up for our newsletter
+    </p>
+    <button class="modal-button" id="modal-button">Sign Up</button>
+
     <div class="modal" id="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Kikui Con Leche</h3>
-                <h3>Orange Grove Latte</h3>
-                <h3>Dirty Chai</h3>
-                <span class="close-button" id="close-button">&times;</span>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Lost World Cafe Newsletter</h2>
+          <span class="close-button" id="close-button">&times;</span>
         </div>
+        <div class="modal-body">
+          <label for="name">Name: </label>
+          <input type="input" name="name" />
+          <label for="email">Email: </label>
+          <input type="input" name="email" />
+          <button>Submit</button>
+        </div>
+      </div>
     </div>
-</body>
+
+    <div class="main-content">
+      <h2>Our Barista's Top Picks</h2>
+      <h3>Kikui Con Leche</h3>
+      <p>Classic latte blended with macadamia nut mylk</p>
+      <img src="imgs/coffee.jpg" alt="" class="coffee" />
+
+      <h3>Orange Grove Latte</h3>
+      <p>Latte with chocolate espresso scented with orange peel</p>
+      <img src="imgs/coffee.jpg" alt="" class="coffee" />
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <div>
+            <h3>Contact</h3>
+            <h3>Directions</h3>
+            <h3>Newsletter</h3>
+        </div>
+    </footer>
+  </body>
 </html>
