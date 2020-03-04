@@ -4,6 +4,8 @@ const modal = document.getElementById("modal");
 const modalBtn = document.getElementById("modal-button");
 // get close modal button
 const closeBtn = document.getElementById("close-button");
+// get submit modal button
+const submit = document.getElementById("submit");
 
 modalBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
@@ -18,7 +20,10 @@ function closeModal() {
 }
 
 function outsideClick(e) {
-    if (e.target == modal) {
-        closeModal();
-    }
+  if (e.target == modal) {
+    closeModal();
   }
+  // if (e.target == submit) {
+  //   closeModal();
+  // }
+}
