@@ -10,6 +10,7 @@ const submit = document.getElementById("submit");
 modalBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 window.addEventListener("click", outsideClick);
+submit.addEventListener("click", isEmpty);
 
 function openModal() {
   modal.style.display = "block";
@@ -22,6 +23,7 @@ function closeModal() {
 function outsideClick(e) {
   if (e.target == modal) {
     closeModal();
+    error.classList.add('errorDisplay');
   }
   // if (e.target == submit) {
   //   closeModal();
@@ -29,8 +31,12 @@ function outsideClick(e) {
 }
 
 function isEmpty() {
-  let input = document.querySelector('input');
-  if (input.value === "" || input.value == null) {
-    error.classList
+  let name = document.getElementById('name');
+  let email = document.getElementById('email');
+  if (name.value === "" || name.value == null) {
+    error.classList.remove('errorDisplay');
+  }
+  if (email.value === "" || email.value == null) {
+    error.classList.remove('errorDisplay');
   }
 }
