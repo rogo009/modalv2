@@ -27,3 +27,10 @@ function outsideClick(e) {
   //   closeModal();
   // }
 }
+
+function isEmpty() {
+  let input = document.querySelector('input');
+  if (input.value === "" || input.value == null) {
+    error.classList
+  }
+}
