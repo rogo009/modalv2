@@ -23,7 +23,7 @@ function closeModal() {
 function outsideClick(e) {
   if (e.target == modal) {
     closeModal();
-    error.classList.add('errorDisplay');
+    error.classList.add("errorDisplay");
   }
   // if (e.target == submit) {
   //   closeModal();
@@ -31,12 +31,12 @@ function outsideClick(e) {
 }
 
 function isEmpty() {
-  let name = document.getElementById('name');
-  let email = document.getElementById('email');
+  let name = document.getElementById("name");
+  let email = document.getElementById("email");
   if (name.value === "" || name.value == null) {
-    error.classList.remove('errorDisplay');
+    error.classList.remove("errorDisplay");
   }
   if (email.value === "" || email.value == null) {
-    error.classList.remove('errorDisplay');
+    error.classList.remove("errorDisplay");
   }
 }

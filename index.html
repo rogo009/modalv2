@@ -14,7 +14,7 @@
         <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
-            <li><a href="#">containt</a></li>
+            <li><a href="#">contact</a></li>
             <li><a href="#">locations</a></li>
             <li><a href="#">shop</a></li>
         </ul>
@@ -36,10 +36,12 @@
 
             <div class="modal-body">
                 <p>Stay connected with us via newsletter</p>
-                <input id="name" type="input" name="name" placeholder="name..." />
-                <input id="email" type="input" name="email" placeholder="email..." />
-                <div class="error errorDisplay" id="error">Please enter your name and email</div>
-                <button class="submit-button" id="submit">Submit</button>
+                <form>
+                    <input id="name" type="input" name="name" placeholder="name..." />
+                    <input id="email" type="input" name="email" placeholder="email..." />
+                    <div class="error errorDisplay" id="error">Please enter your name and email</div>
+                    <button class="submit-button" id="submit" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -53,7 +55,7 @@
         </div>
         <div>
             <h3>Orange Grove Latte</h3>
-            <p>Latte with chocolate espresso scented with orange peel</p>
+            <p>Signature latte scented with orange peel</p>
             <img src="imgs/coffee.jpg" alt="" class="coffee" />
         </div>
         <div>
@@ -66,10 +68,24 @@
 
     <script src="script.js"></script>
     <footer>
-        <div>
+        <div class="container">
+            <div>
             <h3>Contact</h3>
-            <h3>Directions</h3>
-            <h3>Newsletter</h3>
+                <p>Phone: 123-567-6984</p>
+                <p>Email: jen@lostworldcafe.com</p>
+                <p>1234 Colorado Street, Pasadena CA 90015</p>
+            </div>
+
+            <div>
+            <h3>Parking</h3>
+                <p>Street - meter</p>
+            </div>
+
+            <div>
+            <h3>Events</h3>
+                <p>Monday: Scones price 1/2 off with single latte purchase.</p>
+            </div>
+
         </div>
     </footer>
 </body>
