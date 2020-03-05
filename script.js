@@ -31,6 +31,7 @@ function outsideClick(e) {
 }
 
 function isEmpty() {
+  
   let name = document.getElementById("name");
   let email = document.getElementById("email");
   if (name.value === "" || name.value == null) {
